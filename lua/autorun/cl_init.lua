@@ -1,6 +1,10 @@
+require "sh_config"
+----------------------------------
+-- @package     Join Commands
+-- @author      geo
+-- @build       v1.0
+----------------------------------
 net.Receive("RunJoinCommands",function(len)
-	RunConsoleCommand("mat_specular", "0")
-	RunConsoleCommand("gmod_mcore_test", "1")
-	RunConsoleCommand("mat_queue_mode", "-1")
-	RunConsoleCommand("cl_threaded_bone_setup", "1")
+	for i=1, #config do
+		RunConsoleCommand(config[1], config[2])
 end)

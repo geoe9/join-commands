@@ -1,3 +1,8 @@
+----------------------------------
+-- @package     Join Commands
+-- @author      geo
+-- @build       v1.0
+----------------------------------
 util.AddNetworkString("RunJoinCommands")
 
 hook.Add("PlayerInitialSpawn","FullLoadSetup",function(ply)
