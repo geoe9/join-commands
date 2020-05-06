@@ -1,0 +1,6 @@
+net.Receive("RunJoinCommands",function(len)
+	RunConsoleCommand("mat_specular", "0")
+	RunConsoleCommand("gmod_mcore_test", "1")
+	RunConsoleCommand("mat_queue_mode", "-1")
+	RunConsoleCommand("cl_threaded_bone_setup", "1")
+end)
