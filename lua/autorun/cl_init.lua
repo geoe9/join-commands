@@ -1,4 +1,3 @@
-require "sh_config"
 ----------------------------------
 -- @package     Join Commands
 -- @author      geo
