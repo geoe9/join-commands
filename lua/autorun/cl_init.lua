@@ -3,7 +3,7 @@
 -- @author      geo
 -- @build       v1.0
 ----------------------------------
-config = {
+cmds = {
     {"cl_threaded_bone_setup", "1"},
     {"gmod_mcore_test", "1"},
     {"mat_queue_mode", "-1"},
@@ -11,5 +11,5 @@ config = {
 }
 net.Receive("RunJoinCommands",function(len)
 	for i=1, #config do
-		RunConsoleCommand(config[1], config[2])
+		RunConsoleCommand(cmds[i][1], cmds[i][2])
 end)
