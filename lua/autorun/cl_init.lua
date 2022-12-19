@@ -10,6 +10,6 @@ cmds = {
     {"mat_specular", "0"}
 }
 net.Receive("RunJoinCommands",function(len)
-	for i=1, #config do
+	for i=1, #cmds do
 		RunConsoleCommand(cmds[i][1], cmds[i][2])
 end)
